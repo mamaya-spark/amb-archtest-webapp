@@ -1,0 +1,8 @@
+node_modules
+vendor
+.dev.env
+**/static/**/*.js
+**/static/**/*.css
+**/static/**/*.map
+**/static/**/*.gz
+webpack-assets.json

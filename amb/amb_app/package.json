@@ -1,0 +1,48 @@
+{
+  "name": "amb_app",
+  "version": "1.0.0",
+  "description": "Automated Model Building with Message Queue",
+  "main": "index.js",
+  "author": "mamaya@sparkcognition.com",
+  "license": "MIT",
+  "engines": {
+    "node": ">=7.8.0",
+    "npm": ">=4.2.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-cookies": "^1.6.4",
+    "angular-nvd3": "^1.0.9",
+    "angular-ui-router": "^0.4.2",
+    "assets-webpack-plugin": "^3.5.1",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "compression-webpack-plugin": "^0.3.2",
+    "css-loader": "^0.28.0",
+    "d3": "^3.4.4",
+    "del": "^2.2.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "gulp": "^3.9.1",
+    "html-loader": "^0.4.5",
+    "jquery": "^3.2.1",
+    "ng-annotate": "^1.2.1",
+    "ng-annotate-loader": "^0.2.0",
+    "ng-lodash": "^0.2.3",
+    "node-sass": "^4.5.2",
+    "normalize.css": "^6.0.0",
+    "nvd3": "^1.8.5",
+    "postcss-loader": "^1.3.3",
+    "sass-loader": "^6.0.3",
+    "socket.io-client": "^1.7.3",
+    "uglify-js": "^2.8.21",
+    "uglifyjs-webpack-plugin": "^0.4.1",
+    "webpack": "^2.3.3",
+    "webpack-stream": "^3.2.0"
+  }
+}
