@@ -1,26 +1,31 @@
+//* Import global app styles
+import './styles/global.scss';
+
 //* Import app configs
 import AppConstants from './config/app.constants';
 import AppConfig from './config/app.config';
 import AppRun from './config/app.run';
 
-// //* Import app components
-// import './interceptors';
-// import './components';
-// import './directives';
-// import './services';
-// import './filters';
-//
+//* Import app components
+import './components';
+import './directives';
+import './filters';
+import './interceptors';
+import './routes';
+import './services';
+
 // //* App dependencies
 const requires = [
     'ui.router',
     'ngAnimate',
     'ngLodash',
     'nvd3',
-    // `${AppConstants.appName}.interceptors`,
-    // `${AppConstants.appName}.components`,
-    // `${AppConstants.appName}.directives`,
-    // `${AppConstants.appName}.services`,
-    // `${AppConstants.appName}.filters`
+    'app.components',
+    'app.directives',
+    'app.filters',
+    'app.interceptors',
+    'app.routes',
+    'app.services'
 ];
 
 //* Create application
