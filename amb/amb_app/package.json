@@ -2,9 +2,13 @@
   "name": "amb_app",
   "version": "1.0.0",
   "description": "Automated Model Building with Message Queue",
-  "main": "index.js",
   "author": "mamaya@sparkcognition.com",
   "license": "MIT",
+  "scripts": {
+    "build": "gulp",
+    "build:prod": "gulp build:prod",
+    "clean": "gulp clean"
+  },
   "engines": {
     "node": ">=7.8.0",
     "npm": ">=4.2.0"

@@ -1,6 +1,5 @@
-import('./models.scss');
+import './models.scss';
 import ModelsController from './models.controller';
-
 
 function ModelsConfig($stateProvider) {
     'ngInject';

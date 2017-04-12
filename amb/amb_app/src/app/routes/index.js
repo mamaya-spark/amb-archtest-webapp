@@ -1,14 +1,13 @@
-import AppConstants from '../config/app.constants';
-
 //* Import Routes
 import './home';
-import './home.modelId';
+import './home.models';
+//import './home.modelId';
 
 let RoutesModule = angular.module(
-    `${AppConstants.appName}.routes`, [
+    'app.routes', [
         'route.home',
         'route.home.models',
-        'route.home.modelId'
+        //'route.home.modelId'
     ]
 );
 

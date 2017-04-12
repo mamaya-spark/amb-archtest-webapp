@@ -1,4 +1,4 @@
-import('./home.scss');
+import './home.scss';
 import HomeController from './home.controller';
 
 function HomeConfig($stateProvider) {

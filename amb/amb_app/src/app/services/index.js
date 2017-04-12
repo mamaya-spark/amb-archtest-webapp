@@ -1,8 +1,6 @@
-import AppConstants from '../config/app.constants';
-
 //* The ServicesModule holds all the services of the app
 let ServicesModule = angular.module(
-    `${AppConstants.appName}.services`, [ ]
+    'app.services', [ ]
 );
 
 //* Import services

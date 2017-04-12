@@ -1,5 +1,5 @@
 const AppConstants = {
-    appName: 'app',
+    appName: 'ambApp',
     apiAddress: '/api',
     jwtKey: 'app.jwt',
     csrfKey: 'csrftoken',

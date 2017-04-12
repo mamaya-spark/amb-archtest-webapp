@@ -1,6 +1,8 @@
 const path              = require('path');
 const webpack           = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
+const UglifyJSPlugin    = require('uglifyjs-webpack-plugin');
 const AssetsPlugin      = require('assets-webpack-plugin');
 
 module.exports = {
@@ -58,7 +60,7 @@ module.exports = {
                                 import: true,
                                 url: false,
                                 minimize: true,
-                                sourceMap: true,
+                                sourceMap: false,
                                 importLoaders: 1
                             }
                         },
@@ -75,7 +77,7 @@ module.exports = {
                         {
                             loader: 'sass-loader',
                             options: {
-                                sourceMap: true
+                                sourceMap: false
                             }
                         }
                     ]
@@ -97,12 +99,19 @@ module.exports = {
             name: 'vendor',
             minChunks: Infinity
         }),
+        new CompressionPlugin({
+            algorithm: 'gzip'
+        }),
+        new UglifyJSPlugin({
+            comments: false,
+            sourceMap: true
+        }),
         new AssetsPlugin({
             filename: 'webpack-assets.json',
             path: __dirname
         })
     ],
-    devtool: 'source-map',
+    devtool: 'eval',
     target: 'web',
     profile: true,
     cache: true
